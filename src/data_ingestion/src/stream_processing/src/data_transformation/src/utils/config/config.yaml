@@ -1,0 +1,30 @@
+# Database Configuration
+database:
+  host: localhost
+  port: 5432
+  name: ecommerce_analytics
+  user: postgres
+  password: password
+
+# Kafka Configuration  
+kafka:
+  bootstrap_servers: localhost:9092
+  topics:
+    orders: orders
+    clickstream: clickstream
+    inventory: inventory
+
+# API Configuration
+apis:
+  fake_store: https://fakestoreapi.com
+  reddit:
+    client_id: ${REDDIT_CLIENT_ID}
+    client_secret: ${REDDIT_CLIENT_SECRET}
+  openweather:
+    api_key: ${OPENWEATHER_API_KEY}
+
+# Processing Configuration
+processing:
+  batch_size: 1000
+  window_duration: 30s
+  checkpoint_location: ./checkpoints
