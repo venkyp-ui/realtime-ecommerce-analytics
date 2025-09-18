@@ -86,6 +86,10 @@ pip install -r requirements.txt
 # Execute the data pipeline
 python src/main.py
 ```
+### Quick Validation Test
+```bash
+# Test the pipeline without full setup
+python test_pipeline.py
 
 ### Automated Development Setup
 
